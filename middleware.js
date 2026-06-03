@@ -17,7 +17,7 @@ module.exports.isLoggedIn = (req, res, next) => {
 // before redirect login page we need to store redirecturl into locals
 module.exports.redirectUrl = (req, res, next) => {
   if(req.session.redirectUrl){
-     res.locals.redirectUrl = req.session.redirectUrl ;
+     res.locals.redirectUrl = req.session.redirectUrl;
   }
     next();
 }

@@ -1,17 +1,14 @@
 {
-  "engines": {
-    "node": "22.11.0"
-  },
   "name": "airbnb",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
+  "main": "app.js",     "scripts": {
+    "start": "node app.js",   
+    "dev": "nodemon app.js",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Keshva Patel",
-  "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": "20.x"   
+  },
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.16.1",
     "cloudinary": "^1.41.3",
